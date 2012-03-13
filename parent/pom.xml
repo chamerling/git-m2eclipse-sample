@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<prerequisites>
+		<maven>2.2.1</maven>
+	</prerequisites>
+	
+	<name>MultiSample  Parent</name>
+	<artifactId>parent</artifactId>
+	<groupId>org.chamerling.multisample</groupId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+	
+	<organization>
+    	<name>chamerling.org</name>
+    	<url>http://chamerling.org</url>
+  	</organization>
+
+  	<inceptionYear>2012</inceptionYear>
+	
+  	<scm>
+      <connection>scm:git:git://git@github.com/chamerling/git-m2eclipse-sample.git</connection>
+      <developerConnection>${project.scm.connection}</developerConnection>
+	  <url>http://github.com/chamerling/git-m2eclipse-sample</url>
+  	</scm>
+
+	<developers>
+		<developer>
+			<name>Christophe Hamerling</name>
+			<id>chamerling</id>
+			<email>christophe.hamerling@petalslink.com</email>
+			<url>http://chamerling.org</url>
+			<organization>PetalsLink</organization>
+			<organizationUrl>
+				http://www.petalslink.com
+			</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+			          <groupId>org.apache.maven.plugins</groupId>
+			          <artifactId>maven-site-plugin</artifactId>
+			          <version>2.3</version>
+		        </plugin>
+			</plugins>
+		</pluginManagement>
+   	
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<addGroupIdToProjectName>true</addGroupIdToProjectName>
+				</configuration>
+			</plugin>
+		</plugins>
+  	</build>
+</project>
